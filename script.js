@@ -84,8 +84,8 @@ function writePassword(){
 //Function to copy the password to the clipboard.
 function copyPassword(){
 
-  //If statement to verify that newPassword is not equal to null.
-  if(newPassword!=null){
+  //If statement to verify that the value of passwordField is not equal to "Your Secure Password".
+  if(passwordField.value!="Your Secure Password"){
 
     //Select to select the variable x.
     passwordField.select();
