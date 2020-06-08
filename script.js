@@ -89,8 +89,14 @@ function copyPassword(){
 
     //Select to select the variable x.
     passwordField.select();
+
+    //.execCommand to copy the selected element to the clipboard.
     document.execCommand('copy');
+
+    //Alert to confirm that the password was copied.
     alert("Password copied to clipboard.");
+    
+    //Else statement to inform the user that a password has not yet been generated.
   } else{
           alert("No password to copy. Please generate a password before attempting to copy.");
     }
