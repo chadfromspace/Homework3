@@ -7,5 +7,5 @@ Random Password Generator produces 8-128 character passwords that can include lo
 
 ---
 
--Special characters include: !@#$%^&*()-_=+[{]}|;:',<.>/?
+-Special characters include: !@#$%^&*()-_=+[{]}|;:',<.>/?  
 -Includes a Copy to Clipboard button.
