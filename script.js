@@ -62,7 +62,7 @@ function writePassword(){
       var characterSelection = characterArray[Math.floor(Math.random() * characterArray.length)]
 
       //Variable to select a variable from characterSelection.
-      var characterSelection2 =  characterSelection[Math.floor(Math.random() * characterArray.length)]
+      var characterSelection2 =  characterSelection[Math.floor(Math.random() * characterSelection.length)]
 
       //Push the randomly selected variable to emptyPasswordArray.
       emptyPasswordArray.push(characterSelection2);
@@ -95,7 +95,7 @@ function copyPassword(){
 
     //Alert to confirm that the password was copied.
     alert("Password copied to clipboard.");
-    
+
     //Else statement to inform the user that a password has not yet been generated.
   } else{
           alert("No password to copy. Please generate a password before attempting to copy.");
