@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script href="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   </head>
-  <body>
+  <!--Added onload attribute to the body to call a function to reset the values of the password variables when the page is loaded; used to correct errors if the page is reloaded.-->
+  <body onload="resetPasswordBox()">
     <div class="wrapper">
       <header>
         <h1>Password Generator</h1>
@@ -16,17 +17,6 @@
       <div class="card">
         <div class="card-header">
           <h2>Generate a Password</h2>
-          <!--
-          <form>
-            <ul>
-              <li><input type="checkbox" id="upperCaseLetters" checked>Upper Case Letters</li>
-              <li><input type="checkbox" id="lowerCaseLetters" checked>Lower Case Letters</li>
-              <li><input type="checkbox" id="numbers" checked>Numbers</li>
-              <li><input type="checkbox" id="specialCharacters" checked>Special Characters</li>
-              <li>Number of Characters: <input type="range" class="rangeSlider" id="numberOfCharacters" min="8" max="128" value="8" width=400px><div class="rangeValue"></div></li>
-            </ul>
-          </form>
-          -->
         </div>        
         <div class="card-body">
           <textarea
@@ -38,7 +28,8 @@
         </div>
         <div class="card-footer">
           <button id="generate" class="btn">Generate Password</button>
-        </div>        
+          <button id="copyToClipboard" class="btn">Copy to Clipboard</button>
+        </div>
       </div>
     </div>
     <script src="script.js"></script>

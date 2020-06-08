@@ -1,36 +1,32 @@
-*,
-*::before,
-*::after {
+*, *::before, *::after{
   box-sizing: border-box;
 }
 
-html,
-body,
-.wrapper {
+html, body, .wrapper{
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
-body {
+body{
   font-family: sans-serif;
   background-color: #f9fbfd;
 }
 
-.wrapper {
+.wrapper{
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
 }
 
-header {
+header{
   text-align: center;
   padding: 20px;
   padding-top: 0px;
   color: hsl(206, 17%, 28%);
 }
 
-.card {
+.card{
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
   border-width: 1px;
@@ -42,23 +38,11 @@ header {
   padding: 30px 40px;
 }
 
-.card-header::after {
-  content: " ";
-  display: block;
-  width: 100%;
-  background: #e7e9eb;
-  height: 2px;
-}
-
-.card-body {
-  min-height: 100px;
-}
-
-.card-footer {
+.card-header{
   text-align: center;
 }
 
-.card-footer::before {
+.card-header::after{
   content: " ";
   display: block;
   width: 100%;
@@ -66,13 +50,29 @@ header {
   height: 2px;
 }
 
-.card-footer::after {
+.card-body{
+  min-height: 100px;
+}
+
+.card-footer{
+  text-align: center;
+}
+
+.card-footer::before{
+  content: " ";
+  display: block;
+  width: 100%;
+  background: #e7e9eb;
+  height: 2px;
+}
+
+.card-footer::after{
   content: " ";
   display: block;
   clear: both;
 }
 
-.btn {
+.btn{
   border: none;
   background-color: hsl(360, 91%, 36%);
   border-radius: 25px;
@@ -88,16 +88,16 @@ header {
   cursor: pointer;
 }
 
-button[disabled] {
+button[disabled]{
   cursor: default;
   background: #c0c7cf;
 }
 
-.float-right {
+.float-right{
   float: right;
 }
 
-#password {
+#password{
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -118,29 +118,23 @@ button[disabled] {
   overflow: hidden;
 }
 
-.rangeSlider
-{
-  width: 400px;
-}
-
-ul
-{
+ul{
   list-style-type: none;
 }
 
-@media (max-width: 690px) {
+@media(max-width: 690px){
   .btn {
     font-size: 1rem;
     margin: 16px 0px 0px 0px;
     padding: 10px 15px;
   }
 
-  #password {
+  #password{
     font-size: 1rem;
   }
 }
 
-@media (max-width: 500px) {
+@media(max-width: 500px){
   .btn {
     font-size: 0.8rem;
   }
